@@ -1,0 +1,77 @@
+/* appname/static/users/css/test.css */
+
+.love-calculator {
+    max-width: 100%;
+    margin: 5% auto;
+}
+
+.love-calculator h2 {
+    text-align: center;
+    color: #333; /* Dark text color */
+}
+
+.form-container {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333; /* Dark text color */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#loveResult {
+    margin-top: 20px;
+}
+
+.result-text {
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #333; /* Dark text color */
+}
+
+.love-percentage {
+    color: #e44d26; /* Accent color */
+    font-size: 24px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    .form-container {
+        padding: 10px;
+    }
+
+    input {
+        width: 100%;
+    }
+}

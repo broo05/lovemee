@@ -1,0 +1,33 @@
+<!-- appname/templates/appname/love_calculator.html -->
+
+{% extends 'users/base.html' %} {% load static %} {% block content %}
+<main>
+  <link rel="stylesheet" href="{% static 'users/css/test.css' %}" />
+
+  <section class="love-calculator">
+    <h2>Love Calculator</h2>
+    <div class="form-container">
+      <form
+        method="post"
+        action="{% url 'love_calculator' %}"
+        id="loveCalculatorForm"
+      >
+        {% csrf_token %} {{ form.as_p }}
+        <button type="submit">Calculate Love</button>
+      </form>
+
+      <div id="loveResult">
+        {% if love_percentage is not None %}
+        <p class="result-text">
+          The love percentage between
+          <strong>{{ form.cleaned_data.girl_name }}</strong> and
+          <strong>{{ form.cleaned_data.boy_name }}</strong> is:
+          <span class="love-percentage">{{ love_percentage }}%</span>
+        </p>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+</main>
+
+{% endblock %}

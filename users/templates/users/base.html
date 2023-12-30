@@ -1,0 +1,36 @@
+<!-- appname/templates/appname/base.html -->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{% static 'users/img/love.png' %}">
+    <title>LoveMe</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap">
+    <link rel="stylesheet" href="{% static 'users/css/styles.css' %}">
+    <script defer src="{% static 'users/js/script.js' %}"></script>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <img src="{% static 'users/img/pngwing.com.png' %}" alt="logo" class="logo" />
+            <span class="love">Love</span><span class="me">Me</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'love_calculator' %}">Tests</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+
+
+</body>
+</html>

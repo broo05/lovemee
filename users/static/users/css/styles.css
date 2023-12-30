@@ -1,0 +1,264 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a box-sizing border-box model */
+* {
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+
+
+header {
+  background-color: #4d044d; /* Update the background color */
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+/* Logo Styles */
+.logo {
+  width: 50px; /* Adjust the width as needed */
+  height: auto;
+  font-size: 1.7em;
+  font-family: 'Quicksand', sans-serif;
+  color: #fff;
+  display: flex;
+}
+
+.love {
+
+  font-weight: bold;
+  color: #ff3860;
+  margin-top: 18%; /* Update the color for the "Love" part */
+}
+
+.me {
+  font-weight: bold;
+  color: #ff8d68;
+  margin-top: 18%; /* Update the color for the "Love" part */
+   /* Update the color for the "Me" part */
+}
+
+
+/* Navigation Styles */
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff; /* Update the font color */
+  font-weight: bold;
+  font-family: 'Quicksand', sans-serif; /* Use Google Fonts for customization */
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #e5554e; /* Update the hover color */
+}
+
+/* Hero Section Styles */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff; /* Update the background color */
+  color: #333; /* Update the font color */
+}
+
+.hero h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-family: 'Quicksand', sans-serif; /* Use Google Fonts for customization */
+}
+
+.hero p {
+  font-size: 1em;
+  margin-bottom: 30px;
+  color: #666; /* Update the font color */
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e5554e; /* Update the button color */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: 'Quicksand', sans-serif; /* Use Google Fonts for customization */
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #d44c48; /* Update the button hover color */
+}
+
+/* About Section Styles */
+.about {
+  background-color: #ff6f61; /* Update the background color */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #fff; /* Update the font color */
+  font-family: 'Quicksand', sans-serif; /* Use Google Fonts for customization */
+}
+
+.about p {
+  font-size: 1em;
+  color: #fff; /* Update the font color */
+}
+
+/* Featured Quizzes Section Styles */
+.featured-quizzes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+}
+
+.quiz-preview {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-preview h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.quiz-preview p {
+  font-size: 1em;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #b24d4d;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+.quiz-preview img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  /* Header Styles for Mobile */
+  header {
+    padding: 0;
+  }
+
+  .logo{
+    margin-left: 2%;
+    display: flex;
+  }
+
+  nav {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
+
+  nav li {
+    margin: 0;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+
+  nav a {
+    padding: 10px 0;
+    display: block;
+    font-size: 0.9em;
+    color: #ff3860;
+
+  }
+
+  /* Hero Section Styles for Mobile */
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .cta-button {
+    font-size: 0.9em;
+  }
+
+  /* About Section Styles for Mobile */
+  .about {
+    padding: 40px 20px;
+  }
+
+  .about h2 {
+    font-size: 1.5em;
+  }
+
+  .about p {
+    font-size: 1em;
+  }
+
+  /* Featured Quizzes Section Styles for Mobile */
+  .featured-quizzes {
+    padding: 40px 20px;
+  }
+
+  .quiz-preview {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .quiz-preview h3 {
+    font-size: 1.2em;
+  }
+
+  .quiz-preview p {
+    font-size: 1em;
+  }
+}
